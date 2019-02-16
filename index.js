@@ -129,7 +129,7 @@ app.intent('StartIntent', {
   function(request, response) {
     debug('Sending start command');
 
-    response.say('Ladies and gentlemen, start your engines');
+    response.say('Starting the car now');
 
     users[request.userId].car.start(function(err, result) {
       if (err) {
